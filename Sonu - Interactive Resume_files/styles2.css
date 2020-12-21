@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css?family=Muli:300,400,700');
+
+div4 {
+  background-color: #fff;
+  font-family: 'Muli', sans-serif;
+z-index: -1;
+}
+.text1 {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  list-style: none;
+  border-bottom: 0;
+z-index: 50;
+}
+
+.text1.hidden {
+  border-bottom: 1px solid #727878;
+  z-index: 55;
+}
+
+.text1 li {
+  display: inline-block;
+  float: left;
+  font-weight: 300;
+  font-size: 1.3em;
+  color: #727878;
+  opacity: 1;
+  transition: all 0.5s ease-in-out;
+  max-width: 2em;
+z-index: 50;
+}
+.text1.hidden li.spaced {
+  padding-left: 0;
+  z-index: 55;
+}
+.text1 li.spaced {
+  padding-left: 0.5em;
+z-index: 50;
+}
+
+.text1.hidden li.ghost {
+  opacity: 0;
+  max-width: 0;
+  z-index: 55;
+}

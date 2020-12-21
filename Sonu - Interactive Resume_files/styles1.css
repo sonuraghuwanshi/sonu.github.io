@@ -1,0 +1,57 @@
+body {
+  background-color: white;
+  color: yellow;
+  font-size: 110px;
+}
+
+.text {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: center;
+          justify-content: center;
+  margin-top: 50vh;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  text-align: center;
+  -webkit-transition: -webkit-transform .3s ease-in-out;
+  transition: -webkit-transform .3s ease-in-out;
+  transition: transform .3s ease-in-out;
+  transition: transform .3s ease-in-out, -webkit-transform .3s ease-in-out;
+}
+.text:hover {
+  -webkit-transform: rotateX(35deg), translateY(-50%);
+          transform: rotateX(35deg), translateY(-50%);
+}
+.text:hover span {
+  color: white;
+}
+.text:hover span:nth-child(odd) {
+  -webkit-transform: skewY(15deg);
+          transform: skewY(15deg);
+}
+.text:hover span:nth-child(even) {
+  -webkit-transform: skewY(-15deg);
+          transform: skewY(-15deg);
+  background-color: #20c2fa;
+  font-size: 25px;
+  color: white;
+}
+.text > span {
+  display: block;
+  background-color: #44b0e9;
+  font-size: 25px;
+  width: 70px;
+  height: 70px;
+  line-height: 70px;
+  -webkit-transition: color .3s ease-in-out, background-color .3s ease-in-out, -webkit-transform .3s ease-in-out;
+  transition: color .3s ease-in-out, background-color .3s ease-in-out, -webkit-transform .3s ease-in-out;
+  transition: transform .3s ease-in-out, color .3s ease-in-out, background-color .3s ease-in-out;
+  transition: transform .3s ease-in-out, color .3s ease-in-out, background-color .3s ease-in-out, -webkit-transform .3s ease-in-out;
+  box-shadow: 0 40px 50px rgba(0, 0, 0, 0.1);
+}
+.text > span:first-child {
+  border-radius: 5px 0px 0px 5px;
+}
+.text > span:last-child {
+  border-radius: 0px 5px 5px 0px;
+}

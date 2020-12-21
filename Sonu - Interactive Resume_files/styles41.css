@@ -1,0 +1,51 @@
+body, html {
+  height: 100%;
+}
+
+div51 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  font-family: 'Open Sans', sans-serif !important;
+  color: #727878;
+  position: relative;
+}
+
+.text51 {
+  display: inline-block;
+  font-size: 2.8vmin;
+  line-height: 1.205;
+}
+
+.text51__first, .text51__second {
+  position: relative;
+}
+
+.text51__word {
+  opacity: 0;
+}
+
+.text51__first-bg, .text51__second-bg {
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 100;
+  transform-origin: left;
+  transform: scaleX(0);
+}
+
+.text51__first-bg {
+  background-color: #5fbff9;
+}
+
+.text51__second-bg {
+  background-color: #f06543;
+}
+
+.text51__second {
+  margin-left: 15vmin;
+}
